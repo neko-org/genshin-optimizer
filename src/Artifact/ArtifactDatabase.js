@@ -27,7 +27,7 @@ export default class ArtifactDatabase {
     let id = `artifact_${artIdIndex++}`
     localStorage.setItem("artifact_highest_id", artIdIndex)
     art.id = id;
-    ArtifactDatabase.saveToLocalStorage(id, art);
+    saveToLocalStorage(id, art);
     artifactDatabase[id] = art;
     artifactIdList.push(id)
     ArtifactDatabase.saveIdList()
